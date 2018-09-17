@@ -1,0 +1,170 @@
+
+/* Browser Reset */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	margin: 0;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	padding-bottom: 2rem;
+}
+
+p {
+	margin: 0;
+}
+
+
+body {
+	color: #fff;
+	background: url(../images/butter.jpg) repeat left top;
+	font: 20px/ 1.618'Lato', sans-serif;
+	text-align: center;
+}
+
+form {
+	margin: 2rem 0 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* for player selection */
+.new_player {
+	margin: 0.25rem;	
+	border-radius: 0.2rem;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.new_player:hover {
+	
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15); 
+	cursor: pointer;
+}
+
+/* radio button */
+input[type="radio"] {
+	cursor: pointer;	
+}
+
+.players_images {
+	max-width: 100%;
+	height: auto;
+}
+
+.btn {
+	position: relative;
+	z-index: 10;
+	margin-bottom: 2rem;
+	padding: 0.375rem 0.75rem;
+	color: #fff;
+	background-color: #4f80e1;
+	border: 1px solid #4f80e1;
+	font-size: 1rem;
+	border-radius: 0.5rem;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background-color: #4671c7;
+	border: 1px solid #4671c7;
+}
+
+/* intro text on home page */
+p.intro {
+	padding: 0 2rem;
+	line-height: 50px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+}
+
+.intro img {
+	vertical-align: middle;
+}
+
+p.lives {
+	padding-right: 1rem;
+}
+
+p.score {
+	padding-left: 1rem;
+}
+p.message {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+p.new_game {
+	padding: 1rem 2rem;
+}
+
+footer p {
+	color: black;
+	font-size: 1rem;
+}
+
+
+/* position elements */
+
+header {
+	padding-top: 2rem;
+}
+
+.overlay {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hide {
+	display: none;
+}
+
+.container {
+	margin: 1rem auto 3rem;
+	width: 100%;
+	max-width: 800px;
+	border-radius: 0.5rem;
+	background-color: saddlebrown;
+	background: url(../images/brick.jpg) repeat left top;;
+}
+
+.scoring {
+	display: flex;
+	justify-content: center;
+}
+
+canvas {
+	position: relative;
+	z-index: 10;
+	margin-top: -2rem;
+}
+
+footer {
+	position: fixed;
+	z-index: 2;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 0.5rem;
+}
